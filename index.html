@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Física de Partículas — Curso de Fenomenología y Métodos Experimentales</title>
+  <meta name="description" content="Curso de física de partículas con orientación fenomenológica y experimental para estudiantes de mitad de carrera en física.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand"><span>FP</span> · Partículas</div>
+    <div class="nav-links">
+      <a href="#inicio" data-page="inicio" class="active">Inicio</a>
+      <a href="#programa" data-page="programa">Programa</a>
+      <a href="#bibliografia" data-page="bibliografia">Bibliografía</a>
+      <a href="#recursos" data-page="recursos">Recursos</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== INICIO ==================== -->
+<div id="page-inicio" class="page active">
+  <div class="hero">
+    <p class="hero-tag">Física · Nivel licenciatura avanzada</p>
+    <h1>Física de Partículas:<br><em>Fenomenología y Métodos Experimentales</em></h1>
+    <p class="hero-sub">
+      Un curso de tres meses que conecta el formalismo del Modelo Estándar con la
+      realidad de los detectores, los colisionadores y los datos experimentales actuales.
+      Sin saltar directo a la teoría de campos: el camino va de los fenómenos a los formalismos.
+    </p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        <span><strong>12 semanas</strong> · 3 meses</span>
+      </div>
+      <div class="hero-meta-item">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <span><strong>4 h/semana</strong> · 2 presencial + 2 independiente</span>
+      </div>
+      <div class="hero-meta-item">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <span><strong>Mitad de carrera</strong> en física</span>
+      </div>
+      <div class="hero-meta-item">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <span>Prereqs: <strong>MQ no-relativista · Relatividad especial</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="stats">
+      <div class="stat-card"><div class="val">12</div><div class="lbl">Semanas</div></div>
+      <div class="stat-card"><div class="val">48 h</div><div class="lbl">Trabajo total</div></div>
+      <div class="stat-card"><div class="val">5</div><div class="lbl">Bloques temáticos</div></div>
+      <div class="stat-card"><div class="val">3</div><div class="lbl">Textos principales</div></div>
+      <div class="stat-card"><div class="val">LHC</div><div class="lbl">Datos reales</div></div>
+    </div>
+
+    <h2 class="section-title">Estructura del curso</h2>
+    <p class="section-desc">Cinco bloques progresivos que van desde las herramientas formales hasta la física más allá del Modelo Estándar.</p>
+
+    <div style="display:grid; gap:10px; margin-bottom:2.5rem;">
+      <div style="display:grid; grid-template-columns:36px 1fr; gap:14px; align-items:start; padding:1rem 1.2rem; border:1px solid var(--border); border-radius:var(--radius); background:var(--bg-card); border-left:3px solid #7F77DD;">
+        <div style="font-family:var(--mono);font-size:11px;color:#7F77DD;font-weight:500;padding-top:2px;">I</div>
+        <div><div style="font-weight:500;font-size:14px;margin-bottom:3px;">Fundamentos y herramientas</div><div style="font-size:13px;color:var(--text-muted);">Semanas 1–4 · Modelo Estándar, cinemática relativista, QED, reglas de Feynman, secciones eficaces.</div></div>
+      </div>
+      <div style="display:grid; grid-template-columns:36px 1fr; gap:14px; align-items:start; padding:1rem 1.2rem; border:1px solid var(--border); border-radius:var(--radius); background:var(--bg-card); border-left:3px solid #1D9E75;">
+        <div style="font-family:var(--mono);font-size:11px;color:#1D9E75;font-weight:500;padding-top:2px;">II</div>
+        <div><div style="font-weight:500;font-size:14px;margin-bottom:3px;">QCD y física hadrónica</div><div style="font-size:13px;color:var(--text-muted);">Semanas 5–7 · Color, libertad asintótica, DIS, funciones de estructura, jets en colisionadores.</div></div>
+      </div>
+      <div style="display:grid; grid-template-columns:36px 1fr; gap:14px; align-items:start; padding:1rem 1.2rem; border:1px solid var(--border); border-radius:var(--radius); background:var(--bg-card); border-left:3px solid #378ADD;">
+        <div style="font-family:var(--mono);font-size:11px;color:#378ADD;font-weight:500;padding-top:2px;">III</div>
+        <div><div style="font-weight:500;font-size:14px;margin-bottom:3px;">Interacciones débiles y electrodébil</div><div style="font-size:13px;color:var(--text-muted);">Semanas 8–10 · Corrientes V−A, bosones W/Z, mecanismo de Higgs, CKM y violación de CP.</div></div>
+      </div>
+      <div style="display:grid; grid-template-columns:36px 1fr; gap:14px; align-items:start; padding:1rem 1.2rem; border:1px solid var(--border); border-radius:var(--radius); background:var(--bg-card); border-left:3px solid #D85A30;">
+        <div style="font-family:var(--mono);font-size:11px;color:#D85A30;font-weight:500;padding-top:2px;">IV</div>
+        <div><div style="font-weight:500;font-size:14px;margin-bottom:3px;">Detectores y técnicas experimentales</div><div style="font-size:13px;color:var(--text-muted);">Semanas 11–12 · Interacción con la materia, calorimetría, arquitectura ATLAS/CMS, bosón de Higgs.</div></div>
+      </div>
+      <div style="display:grid; grid-template-columns:36px 1fr; gap:14px; align-items:start; padding:1rem 1.2rem; border:1px solid var(--border); border-radius:var(--radius); background:var(--bg-card); border-left:3px solid #EF9F27;">
+        <div style="font-family:var(--mono);font-size:11px;color:#EF9F27;font-weight:500;padding-top:2px;">V</div>
+        <div><div style="font-weight:500;font-size:14px;margin-bottom:3px;">Física más allá del Modelo Estándar</div><div style="font-size:13px;color:var(--text-muted);">Semana 12 (integrado) · Neutrinos, materia oscura, anomalías recientes, búsquedas en el LHC.</div></div>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 class="section-title">Metodología</h2>
+    <p class="section-desc">El enfoque fenomenológico/experimental se traduce en tareas concretas cada semana.</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:10px;">
+      <div style="padding:1rem 1.2rem; border:1px solid var(--border); border-radius:var(--radius); background:var(--bg-card);">
+        <div style="font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--text-faint);margin-bottom:6px;">Datos reales</div>
+        <div style="font-size:13px;color:var(--text-muted);">Análisis con ROOT o Python (Uproot) usando datasets públicos del CERN Open Data Portal.</div>
+      </div>
+      <div style="padding:1rem 1.2rem; border:1px solid var(--border); border-radius:var(--radius); background:var(--bg-card);">
+        <div style="font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--text-faint);margin-bottom:6px;">Journal Club</div>
+        <div style="font-size:13px;color:var(--text-muted);">Un paper experimental de PRL o PLB por mes. Los estudiantes aprenden a leer artículos de física experimental.</div>
+      </div>
+      <div style="padding:1rem 1.2rem; border:1px solid var(--border); border-radius:var(--radius); background:var(--bg-card);">
+        <div style="font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--text-faint);margin-bottom:6px;">PDG como herramienta</div>
+        <div style="font-size:13px;color:var(--text-muted);">Desde la semana 1 se trabaja directamente con el Review of Particle Physics como referencia viva.</div>
+      </div>
+      <div style="padding:1rem 1.2rem; border:1px solid var(--border); border-radius:var(--radius); background:var(--bg-card);">
+        <div style="font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--text-faint);margin-bottom:6px;">Proyecto final</div>
+        <div style="font-size:13px;color:var(--text-muted);">Análisis crítico de un paper experimental reciente o reproducción de un resultado con datos abiertos.</div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- ==================== PROGRAMA ==================== -->
+<div id="page-programa" class="page">
+  <div class="hero" style="padding-bottom:2rem;">
+    <p class="hero-tag">Programa semanal</p>
+    <h1>Calendario <em>detallado</em></h1>
+    <p class="hero-sub">2 horas presenciales + 2 horas de trabajo independiente por semana. Haz clic en cada semana para ver el desglose.</p>
+  </div>
+  <main>
+    <div class="filters">
+      <button class="filter-btn active" data-bloque="0">Todas</button>
+      <button class="filter-btn" data-bloque="1">I · Fundamentos</button>
+      <button class="filter-btn" data-bloque="2">II · QCD</button>
+      <button class="filter-btn" data-bloque="3">III · Electrodébil</button>
+      <button class="filter-btn" data-bloque="4">IV · Detectores</button>
+    </div>
+
+    <!-- BLOQUE I -->
+    <div class="bloque-label" data-bloque="1"><span class="dot" style="background:#7F77DD;"></span>Bloque I · Fundamentos y herramientas · Mes 1</div>
+
+    <div class="semana-card" data-bloque="1">
+      <div class="semana-header">
+        <div class="semana-num">S01</div>
+        <div><div class="semana-titulo">Panorama del Modelo Estándar</div><div class="semana-fecha">Semana 1 · Mes 1</div></div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="semana-body">
+        <div class="session-grid">
+          <div class="session-box session-presencial">
+            <div class="session-box-label">▶ Presencial · 2 h</div>
+            Partículas elementales y fuerzas fundamentales. Simetría gauge. Historia experimental: del electrón al bosón de Higgs. Introducción a la PDG y cómo leerla.
+          </div>
+          <div class="session-box session-independiente">
+            <div class="session-box-label">◎ Trabajo independiente · 2 h</div>
+            Lectura: Thomson cap. 1. Navegar pdg.lbl.gov. Problema: identificar partículas y números cuánticos de 5 procesos del PDG.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="semana-card" data-bloque="1">
+      <div class="semana-header">
+        <div class="semana-num">S02</div>
+        <div><div class="semana-titulo">Cinemática relativista</div><div class="semana-fecha">Semana 2 · Mes 1</div></div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="semana-body">
+        <div class="session-grid">
+          <div class="session-box session-presencial">
+            <div class="session-box-label">▶ Presencial · 2 h</div>
+            4-vectores, invariantes de Lorentz. Variables cinemáticas: s, t, u; rapidez y pseudorapidez η. Cinemática de decaimientos y colisiones con ejemplos del LHC.
+          </div>
+          <div class="session-box session-independiente">
+            <div class="session-box-label">◎ Trabajo independiente · 2 h</div>
+            Problemas de cinemática con datos reales de colisiones pp. Leer ficha del Z⁰ en el PDG e identificar todas sus propiedades cinemáticas.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="semana-card" data-bloque="1">
+      <div class="semana-header">
+        <div class="semana-num">S03</div>
+        <div><div class="semana-titulo">QED y reglas de Feynman</div><div class="semana-fecha">Semana 3 · Mes 1</div></div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="semana-body">
+        <div class="session-grid">
+          <div class="session-box session-presencial">
+            <div class="session-box-label">▶ Presencial · 2 h</div>
+            Propagadores y vértices. Amplitud de dispersión ℳ. Cálculo de e⁺e⁻ → μ⁺μ⁻. Comparación directa con datos de LEP.
+          </div>
+          <div class="session-box session-independiente">
+            <div class="session-box-label">◎ Trabajo independiente · 2 h</div>
+            Halzen &amp; Martin cap. 3–4. Derivar sección eficaz total de dispersión Compton. 3 problemas de aplicación de reglas de Feynman.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="semana-card" data-bloque="1">
+      <div class="semana-header">
+        <div class="semana-num">S04</div>
+        <div><div class="semana-titulo">Sección eficaz y decaimientos</div><div class="semana-fecha">Semana 4 · Mes 1</div></div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="semana-body">
+        <div class="session-grid">
+          <div class="session-box session-presencial">
+            <div class="session-box-label">▶ Presencial · 2 h</div>
+            Tasa de decaimiento y espacio de fase (2 y 3 cuerpos). Anchura parcial y razón de ramificación. Lectura e interpretación de tablas del PDG en clase.
+          </div>
+          <div class="session-box session-independiente">
+            <div class="session-box-label">◎ Trabajo independiente · 2 h</div>
+            Ejercicio guiado: leer ficha del τ y el W±. Calcular vida media y anchura parcial de 2 procesos. Quiz corto de autoevaluación.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOQUE II -->
+    <div class="bloque-label" data-bloque="2"><span class="dot" style="background:#1D9E75;"></span>Bloque II · QCD y física hadrónica · Mes 2</div>
+
+    <div class="semana-card" data-bloque="2">
+      <div class="semana-header">
+        <div class="semana-num">S05</div>
+        <div><div class="semana-titulo">Simetría de color y QCD</div><div class="semana-fecha">Semana 5 · Mes 2</div></div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="semana-body">
+        <div class="session-grid">
+          <div class="session-box session-presencial">
+            <div class="session-box-label">▶ Presencial · 2 h</div>
+            Grupo SU(3)c, gluones, confinamiento y libertad asintótica. Parámetro R en e⁺e⁻: evidencia experimental del color. Corrida del acoplamiento αs(Q²).
+          </div>
+          <div class="session-box session-independiente">
+            <div class="session-box-label">◎ Trabajo independiente · 2 h</div>
+            Thomson cap. 10. Calcular R para distintas energías. Buscar mediciones de αs en el PDG y graficar su corrida con Python.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="semana-card" data-bloque="2">
+      <div class="semana-header">
+        <div class="semana-num">S06</div>
+        <div><div class="semana-titulo">Estructura del protón — DIS</div><div class="semana-fecha">Semana 6 · Mes 2</div></div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="semana-body">
+        <div class="session-grid">
+          <div class="session-box session-presencial">
+            <div class="session-box-label">▶ Presencial · 2 h</div>
+            Modelo de partones, funciones de estructura F₁ y F₂. Escalado de Bjorken y sus violaciones (QCD). Experimentos HERA/H1 y ZEUS.
+          </div>
+          <div class="session-box session-independiente">
+            <div class="session-box-label">◎ Trabajo independiente · 2 h</div>
+            Halzen &amp; Martin cap. 8–9. Graficar funciones de estructura con datos públicos de HERA. Interpretar reglas de suma.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="semana-card" data-bloque="2">
+      <div class="semana-header">
+        <div class="semana-num">S07</div>
+        <div><div class="semana-titulo">Jets y fenomenología de colisionadores</div><div class="semana-fecha">Semana 7 · Mes 2</div></div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="semana-body">
+        <div class="session-grid">
+          <div class="session-box session-presencial">
+            <div class="session-box-label">▶ Presencial · 2 h</div>
+            Producción de jets y algoritmo anti-kT. PDFs y su rol en el LHC. Cómo leer un análisis de ATLAS/CMS: del detector a la distribución.
+          </div>
+          <div class="session-box session-independiente">
+            <div class="session-box-label">◎ Trabajo independiente · 2 h</div>
+            Leer un paper de medición de sección eficaz de jets en CMS (≤6 págs). Entrega: 1 página de síntesis y preguntas para discutir en clase.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOQUE III -->
+    <div class="bloque-label" data-bloque="3"><span class="dot" style="background:#378ADD;"></span>Bloque III · Interacciones débiles y electrodébil · Meses 2–3</div>
+
+    <div class="semana-card" data-bloque="3">
+      <div class="semana-header">
+        <div class="semana-num">S08</div>
+        <div><div class="semana-titulo">Corrientes débiles y estructura V−A</div><div class="semana-fecha">Semana 8 · Mes 2</div></div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="semana-body">
+        <div class="session-grid">
+          <div class="session-box session-presencial">
+            <div class="session-box-label">▶ Presencial · 2 h</div>
+            Decaimiento β y universalidad leptónica. Helicidad y quiralidad. Estructura V−A. El experimento de Wu (1957): violación de paridad en perspectiva histórica.
+          </div>
+          <div class="session-box session-independiente">
+            <div class="session-box-label">◎ Trabajo independiente · 2 h</div>
+            Thomson cap. 11–12. Problemas de decaimiento débil. Leer el artículo original de Wu et al. (1957) y escribir una breve reseña crítica de media página.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="semana-card" data-bloque="3">
+      <div class="semana-header">
+        <div class="semana-num">S09</div>
+        <div><div class="semana-titulo">Bosones W y Z — unificación electrodébil</div><div class="semana-fecha">Semana 9 · Mes 3</div></div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="semana-body">
+        <div class="session-grid">
+          <div class="session-box session-presencial">
+            <div class="session-box-label">▶ Presencial · 2 h</div>
+            Mecanismo de Higgs y ruptura espontánea de simetría. Masas del W y Z: predicción y descubrimiento UA1/UA2 (1983). Anchura del Z⁰ y número de familias de neutrinos.
+          </div>
+          <div class="session-box session-independiente">
+            <div class="session-box-label">◎ Trabajo independiente · 2 h</div>
+            Analizar datos públicos de LEP (anchura del Z). Problema: calcular número de familias de neutrinos a partir de la anchura total medida.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="semana-card" data-bloque="3">
+      <div class="semana-header">
+        <div class="semana-num">S10</div>
+        <div><div class="semana-titulo">Mezcla de quarks y violación de CP</div><div class="semana-fecha">Semana 10 · Mes 3</div></div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="semana-body">
+        <div class="session-grid">
+          <div class="session-box session-presencial">
+            <div class="session-box-label">▶ Presencial · 2 h</div>
+            Matriz CKM: ángulos y fase de violación de CP. Sistema de kaones y mesones B. Experimentos BaBar, Belle y LHCb. La asimetría bariónica del universo.
+          </div>
+          <div class="session-box session-independiente">
+            <div class="session-box-label">◎ Trabajo independiente · 2 h</div>
+            Rubbia cap. 16 (selección). Triángulo de unitariedad y ángulos CKM. Buscar la medición más reciente del ángulo γ en LHCb en Inspire HEP.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOQUE IV -->
+    <div class="bloque-label" data-bloque="4"><span class="dot" style="background:#D85A30;"></span>Bloque IV · Detectores y técnicas experimentales · Mes 3</div>
+
+    <div class="semana-card" data-bloque="4">
+      <div class="semana-header">
+        <div class="semana-num">S11</div>
+        <div><div class="semana-titulo">Interacción de partículas con la materia</div><div class="semana-fecha">Semana 11 · Mes 3</div></div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="semana-body">
+        <div class="session-grid">
+          <div class="session-box session-presencial">
+            <div class="session-box-label">▶ Presencial · 2 h</div>
+            Energía de ionización (Bethe-Bloch), radiación de frenado. Longitud de radiación, cascadas electromagnéticas y hadrónicas. Detectores de silicio y TPC.
+          </div>
+          <div class="session-box session-independiente">
+            <div class="session-box-label">◎ Trabajo independiente · 2 h</div>
+            Grupen &amp; Shwartz cap. 1–3 (selección). Calcular dE/dx para π y μ a distintas energías. Diseñar un esquema conceptual de un detector simple.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="semana-card" data-bloque="4">
+      <div class="semana-header">
+        <div class="semana-num">S12</div>
+        <div><div class="semana-titulo">Detectores modernos · Higgs · BSM · Proyecto final</div><div class="semana-fecha">Semana 12 · Mes 3</div></div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="semana-body">
+        <div class="session-grid">
+          <div class="session-box session-presencial">
+            <div class="session-box-label">▶ Presencial · 2 h</div>
+            Arquitectura ATLAS/CMS. Canales de producción y decaimiento del Higgs (H→γγ, H→4l). Paper de descubrimiento 2012. Panorama BSM: neutrinos, materia oscura, anomalías. Presentaciones de proyectos finales.
+          </div>
+          <div class="session-box session-independiente">
+            <div class="session-box-label">◎ Trabajo independiente · 2 h</div>
+            Entrega final: análisis crítico de 2 páginas del paper ATLAS+CMS 2012 (Phys. Lett. B), o proyecto de análisis con datos abiertos del CERN Open Data Portal.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- ==================== BIBLIOGRAFÍA ==================== -->
+<div id="page-bibliografia" class="page">
+  <div class="hero" style="padding-bottom:2rem;">
+    <p class="hero-tag">Bibliografía anotada</p>
+    <h1>Textos del <em>curso</em></h1>
+    <p class="hero-sub">Selección orientada a fenomenología y experimento. Cada texto incluye notas sobre su rol en el curso y nivel de exigencia.</p>
+  </div>
+  <main>
+
+    <div class="biblio-section">
+      <div class="biblio-section-title">Textos principales</div>
+
+      <div class="biblio-card">
+        <div class="biblio-num">01</div>
+        <div>
+          <div class="biblio-title">Modern Particle Physics</div>
+          <div class="biblio-authors">Mark Thomson — Cambridge University Press, 2013</div>
+          <div class="biblio-desc">Texto base del curso. Escrito por un experimentalista del experimento ATLAS, equilibra formalismo y fenomenología de manera excepcional. Parte de conocimientos básicos de mecánica cuántica y relatividad especial, sin asumir teoría cuántica de campos. Incluye secciones dedicadas a detección experimental y análisis de datos. Los capítulos sobre interacciones débiles y oscilaciones de neutrinos son especialmente sólidos.</div>
+          <div class="biblio-tags">
+            <span class="biblio-tag principal">texto principal</span>
+            <span class="biblio-tag">nivel: licenciatura avanzada</span>
+            <span class="biblio-tag">554 pp.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="biblio-card">
+        <div class="biblio-num">02</div>
+        <div>
+          <div class="biblio-title">Quarks and Leptons: An Introductory Course in Modern Particle Physics</div>
+          <div class="biblio-authors">Francis Halzen &amp; Alan D. Martin — Wiley, 1984</div>
+          <div class="biblio-desc">Clásico indispensable. La mejor introducción a los diagramas de Feynman y su aplicación directa a QED, QCD e interacciones débiles. Más de 200 problemas resueltos. Su tratamiento del modelo de partones y la dispersión inelástica profunda sigue siendo insuperable para la intuición física. Complemento permanente del texto de Thomson.</div>
+          <div class="biblio-tags">
+            <span class="biblio-tag principal">texto principal</span>
+            <span class="biblio-tag">nivel: licenciatura avanzada</span>
+            <span class="biblio-tag">396 pp.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="biblio-card">
+        <div class="biblio-num">03</div>
+        <div>
+          <div class="biblio-title">Phenomenology of Particle Physics</div>
+          <div class="biblio-authors">André Rubbia — Cambridge University Press, 2022</div>
+          <div class="biblio-desc">El texto fenomenológico más completo y actualizado disponible. Más de 1100 páginas que entrelazan historia, experimento y teoría de manera única. Incluye el descubrimiento del bosón de Higgs y las oscilaciones de neutrinos con tratamiento actualizado. Usado como referencia avanzada y para el bloque de física electrodébil. Ideal para profundizar en cualquier tema del curso.</div>
+          <div class="biblio-tags">
+            <span class="biblio-tag principal">referencia avanzada</span>
+            <span class="biblio-tag">nivel: posgrado / referencia</span>
+            <span class="biblio-tag">1110 pp. · 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="biblio-section">
+      <div class="biblio-section-title">Textos complementarios por tema</div>
+
+      <div class="biblio-card">
+        <div class="biblio-num">04</div>
+        <div>
+          <div class="biblio-title">Introduction to Elementary Particle Physics</div>
+          <div class="biblio-authors">Alessandro Bettini — Cambridge University Press, 2ª ed., 2014</div>
+          <div class="biblio-desc">Orientado completamente al experimento. Ideal como lectura paralela narrativa: explica los experimentos históricos y actuales antes que los formalismos. Muy útil para los bloques de detectores y descubrimientos experimentales.</div>
+          <div class="biblio-tags">
+            <span class="biblio-tag">detectores · historia</span>
+            <span class="biblio-tag">nivel: introductorio-medio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="biblio-card">
+        <div class="biblio-num">05</div>
+        <div>
+          <div class="biblio-title">Particle Detectors</div>
+          <div class="biblio-authors">Claus Grupen &amp; Boris Shwartz — Cambridge University Press, 2ª ed., 2008</div>
+          <div class="biblio-desc">Referencia estándar para el bloque de detectores (semanas 11–12). Cubre en detalle la física de la interacción de partículas con la materia, la calorimetría, los sistemas de trigger y la electrónica de lectura. No requiere más que física clásica avanzada.</div>
+          <div class="biblio-tags">
+            <span class="biblio-tag">detectores</span>
+            <span class="biblio-tag">semanas 11–12</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="biblio-card">
+        <div class="biblio-num">06</div>
+        <div>
+          <div class="biblio-title">QCD and Collider Physics</div>
+          <div class="biblio-authors">R.K. Ellis, W.J. Stirling &amp; B.R. Webber — Cambridge University Press, 1996</div>
+          <div class="biblio-desc">Referencia para el bloque de QCD (semanas 5–7). Tratamiento riguroso de las funciones de distribución de partones, la producción de jets y los cálculos perturbativos de QCD aplicados a colisionadores hadrónicos.</div>
+          <div class="biblio-tags">
+            <span class="biblio-tag">QCD · colisionadores</span>
+            <span class="biblio-tag">semanas 5–7</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="biblio-card">
+        <div class="biblio-num">07</div>
+        <div>
+          <div class="biblio-title">Review of Particle Physics (PDG 2024)</div>
+          <div class="biblio-authors">Particle Data Group — Progress of Theoretical and Experimental Physics, 2024</div>
+          <div class="biblio-desc">No un texto en el sentido tradicional, sino la referencia viva del campo. Tablas de propiedades de todas las partículas conocidas, resúmenes de física del Higgs, supersimetría, materia oscura, cosmología y más de 120 artículos de revisión. Se utiliza desde la semana 1 hasta la última sesión. Disponible de forma gratuita en pdg.lbl.gov.</div>
+          <div class="biblio-tags">
+            <span class="biblio-tag principal">referencia permanente</span>
+            <span class="biblio-tag">gratuito · pdg.lbl.gov</span>
+            <span class="biblio-tag">actualización bianual</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- ==================== RECURSOS ==================== -->
+<div id="page-recursos" class="page">
+  <div class="hero" style="padding-bottom:2rem;">
+    <p class="hero-tag">Recursos en línea</p>
+    <h1>Herramientas y <em>datos</em></h1>
+    <p class="hero-sub">Todos los recursos son gratuitos y de acceso público. El curso usa datos experimentales reales desde la primera semana.</p>
+  </div>
+  <main>
+
+    <h2 class="section-title">Datos y referencias</h2>
+    <p class="section-desc">Fuentes primarias que se usan directamente en clase y en trabajo independiente.</p>
+    <div class="recursos-grid">
+      <div class="recurso-card">
+        <a href="https://pdg.lbl.gov" target="_blank" rel="noopener">
+          <div class="recurso-tipo">Referencia · datos</div>
+          <div class="recurso-nombre">Particle Data Group (PDG)</div>
+          <div class="recurso-desc">La referencia definitiva del campo. Propiedades de todas las partículas conocidas, resúmenes de física y artículos de revisión. Se usa desde la semana 1.</div>
+          <div class="recurso-url">pdg.lbl.gov</div>
+        </a>
+      </div>
+      <div class="recurso-card">
+        <a href="https://opendata.cern.ch" target="_blank" rel="noopener">
+          <div class="recurso-tipo">Datos experimentales</div>
+          <div class="recurso-nombre">CERN Open Data Portal</div>
+          <div class="recurso-desc">Datos públicos de los experimentos del LHC (CMS, ATLAS, ALICE, LHCb). Ideal para proyectos finales y prácticas con Python/ROOT.</div>
+          <div class="recurso-url">opendata.cern.ch</div>
+        </a>
+      </div>
+      <div class="recurso-card">
+        <a href="https://inspirehep.net" target="_blank" rel="noopener">
+          <div class="recurso-tipo">Literatura científica</div>
+          <div class="recurso-nombre">Inspire HEP</div>
+          <div class="recurso-desc">Base de datos de alta energía con acceso a papers, citas, perfiles de autores y experimentos. Para buscar artículos del journal club.</div>
+          <div class="recurso-url">inspirehep.net</div>
+        </a>
+      </div>
+      <div class="recurso-card">
+        <a href="https://arxiv.org/archive/hep-ph" target="_blank" rel="noopener">
+          <div class="recurso-tipo">Preprints</div>
+          <div class="recurso-nombre">arXiv · hep-ph &amp; hep-ex</div>
+          <div class="recurso-desc">Archivo de preprints de física de altas energías. hep-ph para fenomenología, hep-ex para resultados experimentales. Acceso libre e inmediato.</div>
+          <div class="recurso-url">arxiv.org/archive/hep-ph</div>
+        </a>
+      </div>
+    </div>
+
+    <hr class="section-divider" style="margin:2rem 0;">
+
+    <h2 class="section-title">Herramientas de análisis</h2>
+    <p class="section-desc">Software para trabajar con datos del LHC y cálculos de fenomenología.</p>
+    <div class="recursos-grid">
+      <div class="recurso-card">
+        <a href="https://root.cern" target="_blank" rel="noopener">
+          <div class="recurso-tipo">Análisis de datos</div>
+          <div class="recurso-nombre">ROOT (CERN)</div>
+          <div class="recurso-desc">Framework estándar de análisis en física de partículas. C++ con interfaz Python (PyROOT). Necesario para abrir archivos .root de CERN Open Data.</div>
+          <div class="recurso-url">root.cern</div>
+        </a>
+      </div>
+      <div class="recurso-card">
+        <a href="https://uproot.readthedocs.io" target="_blank" rel="noopener">
+          <div class="recurso-tipo">Python · análisis</div>
+          <div class="recurso-nombre">Uproot + Hist</div>
+          <div class="recurso-desc">Leer archivos ROOT desde Python puro, sin instalar ROOT. Combinado con NumPy y Matplotlib, es suficiente para la mayoría de prácticas del curso.</div>
+          <div class="recurso-url">uproot.readthedocs.io</div>
+        </a>
+      </div>
+      <div class="recurso-card">
+        <a href="https://feynman.aivazis.com" target="_blank" rel="noopener">
+          <div class="recurso-tipo">Visualización</div>
+          <div class="recurso-nombre">JaxoDraw / FeynMP</div>
+          <div class="recurso-desc">Herramientas para dibujar diagramas de Feynman. Útil para tareas y reportes. Alternativa online disponible.</div>
+          <div class="recurso-url">feynman.aivazis.com</div>
+        </a>
+      </div>
+    </div>
+
+    <hr class="section-divider" style="margin:2rem 0;">
+
+    <h2 class="section-title">Cursos y notas de acceso libre</h2>
+    <p class="section-desc">Material complementario de escuelas de verano y universidades.</p>
+    <div class="recursos-grid">
+      <div class="recurso-card">
+        <a href="https://indico.cern.ch/category/345/" target="_blank" rel="noopener">
+          <div class="recurso-tipo">Escuela de verano</div>
+          <div class="recurso-nombre">CERN Summer School</div>
+          <div class="recurso-desc">Grabaciones y diapositivas de la escuela de verano del CERN. Lecturas de fenomenología, detectores y física del LHC por expertos del campo.</div>
+          <div class="recurso-url">indico.cern.ch</div>
+        </a>
+      </div>
+      <div class="recurso-card">
+        <a href="https://www.slac.stanford.edu/econf/C9207201/" target="_blank" rel="noopener">
+          <div class="recurso-tipo">Escuela de verano</div>
+          <div class="recurso-nombre">TASI Lectures</div>
+          <div class="recurso-desc">Lecturas del Theoretical Advanced Study Institute (TASI). Notas de fenomenología de partículas, QCD, Higgs y BSM de excelente nivel pedagógico.</div>
+          <div class="recurso-url">slac.stanford.edu · arXiv</div>
+        </a>
+      </div>
+      <div class="recurso-card">
+        <a href="https://www.hepdata.net" target="_blank" rel="noopener">
+          <div class="recurso-tipo">Datos de papers</div>
+          <div class="recurso-nombre">HEPData</div>
+          <div class="recurso-desc">Repositorio de datos de figuras y tablas de papers de física de altas energías. Permite descargar los datos exactos publicados en los artículos.</div>
+          <div class="recurso-url">hepdata.net</div>
+        </a>
+      </div>
+      <div class="recurso-card">
+        <a href="https://home.cern/science/experiments/atlas" target="_blank" rel="noopener">
+          <div class="recurso-tipo">Experimento</div>
+          <div class="recurso-nombre">ATLAS &amp; CMS Public Results</div>
+          <div class="recurso-desc">Resultados públicos y aprobados de los experimentos. Twikis de física con notas de análisis, figuras y tablas de todos los resultados publicados.</div>
+          <div class="recurso-url">atlas.web.cern.ch · cms-results.web.cern.ch</div>
+        </a>
+      </div>
+    </div>
+
+    <hr class="section-divider" style="margin:2rem 0;">
+
+    <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.4rem 1.6rem;">
+      <div style="font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--text-faint);margin-bottom:.8rem;">Paper de referencia — descubrimiento del bosón de Higgs</div>
+      <div style="font-family:var(--serif);font-size:1rem;margin-bottom:4px;">Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC</div>
+      <div style="font-size:13px;color:var(--text-muted);margin-bottom:4px;">CMS Collaboration — Physics Letters B 716 (2012) 30–61</div>
+      <div style="font-size:13px;color:var(--text-muted);margin-bottom:10px;">Lectura obligatoria para la semana 12. Base del proyecto final.</div>
+      <a href="https://arxiv.org/abs/1207.7235" target="_blank" rel="noopener" style="font-family:var(--mono);font-size:12px;color:var(--accent);">arXiv:1207.7235 →</a>
+      &nbsp;&nbsp;
+      <a href="https://arxiv.org/abs/1207.7214" target="_blank" rel="noopener" style="font-family:var(--mono);font-size:12px;color:var(--accent);">ATLAS: arXiv:1207.7214 →</a>
+    </div>
+
+  </main>
+</div>
+
+<footer>
+  <div>Física de Partículas · Fenomenología y Métodos Experimentales</div>
+  <div style="margin-top:4px;">Generado con Claude · <a href="https://pdg.lbl.gov" target="_blank">pdg.lbl.gov</a> · <a href="https://opendata.cern.ch" target="_blank">opendata.cern.ch</a></div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
